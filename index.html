@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="controls">
+            <button id="clearBtn">Clear Grid</button>
+            <button id="pause-play">Pause/Play</button>
+            <button id="loadRulesBtn">Load Rules</button>
+            <br />
+            <label for="speedRange">Speed:</label>
+            <input type="range" id="speedRange" min="0" max="100" step="1" value="15">
+            <span id="speedValue">100</span> ms/step
+        </div>
+        <textarea id="rules" rows="15" cols="60" placeholder="Paste your JSON rules here"></textarea>
+        <canvas id="myCanvas"></canvas>
+    </div>
+    <script src="debug.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
